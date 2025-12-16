@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <input class="display" readonly> 
+        <div class="btn-cnt">
+            <div class="row1 rows">
+                <div class="btn fn  ">  <button onclick="clearDisplay()">AC</button></div>
+                <div class="btn fn">  <button onclick="toDisplay('')">C</button> </div>
+                <div class="btn fn">  <button onclick="toDisplay('%')">%</button> </div>
+                <div class="btn fn">  <button onclick="toDisplay('/')">/</button></div>  
+
+            </div>
+
+            <div class="row2 rows">
+                 <div class="btn"> <button onclick="toDisplay('7')">7</button></div>
+                 <div class="btn"> <button onclick="toDisplay('8')">8</button></div>
+                 <div class="btn"> <button onclick="toDisplay('9')">9</button></div>
+                 <div class="btn fn"> <button onclick="toDisplay('*')">*</button></div>
+            </div>
+
+             <div class="row3 rows">
+                 <div class="btn"> <button onclick="toDisplay('4')">4</button></div>
+                 <div class="btn"> <button onclick="toDisplay('5')">5</button></div>
+                 <div class="btn"> <button onclick="toDisplay('6')">6</button></div>
+                 <div class="btn fn"> <button onclick="toDisplay('-')">-</button></div>
+            </div>
+
+             <div class="row4 rows">
+                 <div class="btn">  <button onclick="toDisplay('1')">1</button> </div>
+                 <div class="btn">  <button onclick="toDisplay('2')">2</button> </div>
+                 <div class="btn">  <button onclick="toDisplay('3')">3</button> </div>
+                 <div class="btn fn">  <button onclick="toDisplay('+')">+</button> </div>
+            </div>
+
+             <div class="row5 rows">
+                 <div class="btn">  <button></button> </div>
+                 <div class="btn">  <button onclick="toDisplay('0')">0</button> </div>
+                 <div class="btn">  <button onclick="toDisplay('.')">.</button> </div>
+                 <div class="btn fn">  <button onclick="calculate()">=</button> </div>
+            </div>
+        </div>
+    </div>
+    <footer><H2>GIRISH made a Calculator !</H2></footer>
+    
+   <script src="indexx.js"></script>
+</body>
+</html>
